@@ -176,14 +176,9 @@ git tag -a v1.0.1 -m &#34;Corrección crítica en la versión 1.0.1&#34;
 </code></pre>
 <aside class="special"><p>ℹ️ Puedes ver las configuraciones disponibles desde el siguiente <a href="https://github.com/conventional-changelog/commitlint?tab=readme-ov-file#shared-configuration" target="_blank">enlace</a></p>
 </aside>
+<h3 is-upgraded>Configuración</h3>
 <p>Configura Commitlint para usar la configuración convencional:</p>
 <pre><code language="language-bash" class="language-bash">echo &#34;export default { extends: [&#39;@commitlint/config-conventional&#39;] };&#34; &gt; commitlint.config.js
-</code></pre>
-<h3 is-upgraded>Configuración</h3>
-<p>Crea el archivo <code>commitlint.config.js</code> en la raíz del proyecto y agrega el siguiente contenido:</p>
-<pre><code language="language-js" class="language-js">export default {
-  extends: [&#34;@commitlint/config-conventional&#34;],
-};
 </code></pre>
 <p>Con esta configuración, Commitlint verificará que los mensajes de commit sigan la siguiente estructura:</p>
 <pre><code language="language-bash" class="language-bash">type(scope?): subject
