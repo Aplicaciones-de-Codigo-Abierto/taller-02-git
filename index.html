@@ -20,9 +20,8 @@
   </style>
 </head>
 <body>
-  <google-codelab-analytics gaid="UA-49880327-14" ga4id=""></google-codelab-analytics>
+  <google-codelab-analytics gaid="UA-49880327-14"></google-codelab-analytics>
   <google-codelab codelab-gaid=""
-                  codelab-ga4id=""
                   id="aca-012025-taller-2"
                   title="Taller 2 - Control de Versiones y Buenas Prácticas con Git"
                   environment="web"
@@ -36,7 +35,7 @@
 
       </google-codelab-step>
     
-      <google-codelab-step label="Prerrequisitos" duration="0">
+      <google-codelab-step label="Primeros Pasos" duration="0">
         <p>Antes de comenzar con el taller, es fundamental asegurarse de que tienes instaladas y configuradas las herramientas necesarias. A continuación, se detallan los pasos para la instalación y configuración inicial de Git y Node.js, así como la creación de un nuevo proyecto.</p>
 <h2 is-upgraded>Instalación de Git</h2>
 <p>Para utilizar Git, primero debes instalarlo en tu sistema. Git está disponible para múltiples plataformas, incluyendo Windows, macOS y Linux. Puedes descargarlo desde el <a href="https://git-scm.com/downloads" target="_blank">sitio oficial de Git</a> y seguir las instrucciones de instalación específicas para tu sistema operativo. Asegúrate de que Git esté correctamente instalado ejecutando el siguiente comando en tu terminal:</p>
@@ -98,7 +97,7 @@
     
       <google-codelab-step label="Gitflow" duration="0">
         <p>Gitflow es un modelo de ramificación (branching model) que proporciona un enfoque estructurado para el desarrollo de software utilizando Git. Este flujo de trabajo es especialmente útil en proyectos que requieren un ciclo de vida de desarrollo más complejo, como aquellos que involucran múltiples versiones y lanzamientos. Gitflow ayuda a los equipos a gestionar el desarrollo de nuevas características, correcciones de errores y lanzamientos de manera organizada y eficiente.</p>
-<p class="image-container"><img alt="Gitflow" src="img/d5bc032b4d559760.svg"></p>
+<p class="image-container"><img alt="Gitflow" src="img\\e0a2a0f6a648605f.svg"></p>
 <h2 is-upgraded>Estructura de Gitflow</h2>
 <p>El modelo Gitflow se basa en dos ramas principales y varias ramas de soporte:</p>
 <ol type="1">
@@ -173,7 +172,7 @@ git tag -a v1.0.1 -m &#34;Corrección crítica en la versión 1.0.1&#34;
 <p>Commitlint es una herramienta que permite verificar que los mensajes de commit sigan un formato específico. Esto es útil para mantener un historial de commits claro y comprensible.</p>
 <h3 is-upgraded>Instalación</h3>
 <p>Para instalar Commitlint, ejecuta el siguiente comando:</p>
-<pre><code language="language-bash" class="language-bash">npm install -D @commitlint/{cli,config-conventional}
+<pre><code language="language-bash" class="language-bash">npm install -D @commitlint/cli @commitlint/config-conventional
 </code></pre>
 <aside class="special"><p>ℹ️ Puedes ver las configuraciones disponibles desde el siguiente <a href="https://github.com/conventional-changelog/commitlint?tab=readme-ov-file#shared-configuration" target="_blank">enlace</a></p>
 </aside>
