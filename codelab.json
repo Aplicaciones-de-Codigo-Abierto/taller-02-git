@@ -3,13 +3,13 @@
   "format": "html",
   "prefix": "https://storage.googleapis.com",
   "mainga": "UA-49880327-14",
-  "updated": "2025-03-25T00:37:48-06:00",
+  "updated": "2025-03-25T18:20:12-06:00",
   "id": "aca-012025-taller-2",
   "duration": 0,
   "title": "Taller 2 - Control de Versiones y Buenas Prácticas con Git",
   "authors": "Metzi Aguilar, David Garcia, Erika Paz, Kevin Escobar",
   "summary": "Taller 1 - Control de versioines y buenas prácticas",
-  "source": ".\\Taller-2-ACA.md",
+  "source": "Taller-2-ACA.md",
   "theme": "",
   "status": [
     "published"
