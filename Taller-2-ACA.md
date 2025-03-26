@@ -419,7 +419,7 @@ Esto generará la siguiente estructura de carpetas y archivos necesarios para el
 └── pre-commit
 ```
 
-Modifica el contenido del archivo `pre-commit` para incluir lo siguiente:
+Modifica el contenido del archivo `pre-commit` para que tenga el siguiente contenido:
 
 ```text
 echo "Ejecutando pre-commit..."
@@ -430,20 +430,10 @@ echo ""
 ℹ️ Este script se ejecuta justo antes de realizar un commit, lo que puede ser útil para ejecutar pruebas, linter de código, etc.
 </aside>
 
-A continuación, crea el script que ejecutará Commitlint cada vez que se realice un commit para validar su contenido. Ejecuta el siguiente comando desde la raíz del proyecto:
+A continuación, crea el script que ejecutará Commitlint cada vez que se realice un commit para validar su contenido. Crea dentro de la carpeta `.husky` ubicado en la raíz del proyecto, el archivo `commit-msg` y agrega el siguiente contenido:
 
-**Linux/Mac:**
-
-```bash
-# Agregar validación de mensajes de commit al hook commit-msg
-echo "npx --no -- commitlint --edit \$1" > .husky/commit-msg
-```
-
-**Windows:**
-
-```bash
-# Los usuarios de Windows deben usar ` para escapar los signos de dólar
-echo "npx --no commitlint --edit `$1" > .husky/commit-msg
+```text
+npx --no -- commitlint --edit $1
 ```
 
 Puedes probar el hook simplemente haciendo un commit, por ejemplo:
@@ -613,7 +603,7 @@ Este flujo asegura que todos los commits en el proyecto sigan un formato coheren
 
 ## Evaluación
 
-Para completar este taller, deberás seguir cada uno de los pasos descritos en esta guía, asegurándote de que las herramientas Commitlint, Husky y Commitizen estén correctamente configuradas. La entrega se realizará a través del E-Campus de la materia y deberá incluir lo siguiente:
+Para completar este taller, deberás seguir cada uno de los pasos descritos en esta guía, asegurándote de que las herramientas Commitlint, Husky y Commitizen estén correctamente configuradas. Los puntos a evaluar son los siguientes:
 
 1. **Verificación de la Configuración**:
    - Se evaluará que Commitlint, Husky y Commitizen estén configurados adecuadamente en tu proyecto. Esto incluirá la validación de casos de prueba donde se espera que los commits fallen (por ejemplo, mensajes de commit que no sigan el formato establecido) y casos donde los commits deben ser aceptados (mensajes de commit válidos).
