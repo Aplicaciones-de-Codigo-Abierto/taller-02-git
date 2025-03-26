@@ -17,10 +17,9 @@ Este taller tiene como objetivo proporcionar una comprensión clara de cómo uti
 Además, se abordarán conceptos clave como la validación de commits, la escritura de mensajes de commit coherentes y la integración de herramientas que facilitan la adherencia a estándares de codificación. Este conocimiento no solo es valioso para el desarrollo individual, sino que también es crucial para el trabajo en equipo, donde la claridad y la consistencia son fundamentales para el éxito del proyecto.
 
 <!-- ------------------------ -->
-
 ## Prerrequisitos
 
-Antes de comenzar con el taller, es fundamental asegurarse de que tienes instaladas y configuradas las herramientas necesarias. A continuación, se detallan los pasos para la instalación y configuración inicial de Git y Node.js, así como la creación de un nuevo proyecto.
+Antes de comenzar con el taller, es fundamental asegurarse de que tienes instaladas y configuradas las herramientas necesarias. A continuación, se detallan los pasos para la instalación y configuración inicial de Git y Node.js.
 
 ### Instalación de Git
 
@@ -42,75 +41,8 @@ node -v
 
 Este comando debería mostrar la versión de Node.js instalada en tu sistema. Si no aparece, asegúrate de que la instalación se haya completado correctamente.
 
-### Inicialización de Repositorio de Git
-
-Una vez que Git está instalado, puedes inicializar un nuevo repositorio de Git en tu proyecto. Esto se hace con el siguiente comando:
-
-```bash
-git init
-```
-
-Este comando creará un nuevo subdirectorio llamado `.git` en tu proyecto, que contendrá todos los archivos necesarios para el seguimiento de versiones. Este paso es crucial, ya que establece el contexto para todas las operaciones de control de versiones que realizarás en el futuro.
-
-Además, es recomendable crear un archivo `.gitignore` para evitar que ciertos archivos o carpetas, como `node_modules`, se suban al repositorio. Para ello, crea un archivo llamado `.gitignore` en la raíz de tu proyecto y agrega lo siguiente:
-
-```text
-node_modules
-```
-
-Este archivo le indica a Git que ignore la carpeta `node_modules`, que puede contener una gran cantidad de archivos y no es necesario incluirla en el control de versiones. Ignorar archivos innecesarios ayuda a mantener el repositorio limpio y enfocado en el código fuente relevante.
-
-### Inicialización de Proyecto Node
-
-Para iniciar un nuevo proyecto de Node.js, utiliza el siguiente comando:
-
-```bash
-npm init -y
-```
-
-Este comando generará un archivo `package.json` con la configuración básica del proyecto. El output será similar al siguiente:
-
-```text
-Wrote to /project/package.json:
-{
-  "name": "project",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": ""
-}
-```
-
-A continuación, es recomendable eliminar el script de prueba y agregar el tipo de proyecto como módulo en el archivo `package.json`:
-
-Eliminar el script de test:
-
-```json
-{
-  ...
-  "scripts": {},
-  ...
-}
-```
-
-Agregar el `type: module`:
-
-```json
-{
-  ...
-  "type": "module",
-  ...
-}
-```
-
-Con estos pasos, tu entorno estará listo para comenzar a trabajar con Git y Node.js, y podrás seguir adelante con las siguientes secciones del taller.
-
 <!-- ------------------------ -->
+
 ## Gitflow
 
 Gitflow es un modelo de ramificación (branching model) que proporciona un enfoque estructurado para el desarrollo de software utilizando Git. Este flujo de trabajo es especialmente útil en proyectos que requieren un ciclo de vida de desarrollo más complejo, como aquellos que involucran múltiples versiones y lanzamientos. Gitflow ayuda a los equipos a gestionar el desarrollo de nuevas características, correcciones de errores y lanzamientos de manera organizada y eficiente.
@@ -227,6 +159,80 @@ Las correcciones de errores críticos en producción se gestionan a través de r
 
 <!-- ------------------------ -->
 
+## Configuración Proyecto
+
+Para el ejercicio práctico de este taller es importante configurar tu espacio de trabajo, para ello es muy importante haber cumplido con los [prerrequisitos](#prerrequisitos) de la guía.
+
+### Inicialización de Repositorio de Git
+
+Una vez que Git está instalado, puedes inicializar un nuevo repositorio de Git en tu proyecto. Esto se hace con el siguiente comando:
+
+```bash
+git init
+```
+
+Este comando creará un nuevo subdirectorio llamado `.git` en tu proyecto, que contendrá todos los archivos necesarios para el seguimiento de versiones. Este paso es crucial, ya que establece el contexto para todas las operaciones de control de versiones que realizarás en el futuro.
+
+Además, es recomendable crear un archivo `.gitignore` para evitar que ciertos archivos o carpetas, como `node_modules`, se suban al repositorio. Para ello, crea un archivo llamado `.gitignore` en la raíz de tu proyecto y agrega lo siguiente:
+
+```text
+node_modules
+```
+
+Este archivo le indica a Git que ignore la carpeta `node_modules`, que puede contener una gran cantidad de archivos y no es necesario incluirla en el control de versiones. Ignorar archivos innecesarios ayuda a mantener el repositorio limpio y enfocado en el código fuente relevante.
+
+### Inicialización de Proyecto Node
+
+Para iniciar un nuevo proyecto de Node.js, utiliza el siguiente comando:
+
+```bash
+npm init -y
+```
+
+Este comando generará un archivo `package.json` con la configuración básica del proyecto. El output será similar al siguiente:
+
+```text
+Wrote to /project/package.json:
+{
+  "name": "project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
+```
+
+A continuación, es recomendable eliminar el script de prueba y agregar el tipo de proyecto como módulo en el archivo `package.json`:
+
+Eliminar el script de test:
+
+```json
+{
+  ...
+  "scripts": {},
+  ...
+}
+```
+
+Agregar el `type: module`:
+
+```json
+{
+  ...
+  "type": "module",
+  ...
+}
+```
+
+Con estos pasos, tu entorno estará listo para comenzar a trabajar con Git y Node.js, y podrás seguir adelante con las siguientes secciones del taller.
+
+<!-- ------------------------ -->
+
 ## Validación de Commits
 
 La validación de commits es una práctica importante que ayuda a mantener la calidad del código y a seguir un estándar en los mensajes de commit. A continuación, se presentan herramientas que facilitan esta tarea.
@@ -244,12 +250,6 @@ npm install -D @commitlint/{cli,config-conventional}
 ```
 
 <aside>ℹ️ Puedes ver las configuraciones disponibles desde el siguiente <a target="_blank" href="https://github.com/conventional-changelog/commitlint?tab=readme-ov-file#shared-configuration">enlace</a></aside>
-
-Configura Commitlint para usar la configuración convencional:
-
-```bash
-echo "export default { extends: ['@commitlint/config-conventional'] };" > commitlint.config.js
-```
 
 #### Configuración
 
@@ -622,7 +622,13 @@ Para completar este taller, deberás seguir cada uno de los pasos descritos en e
 3. **Gráfico de Ramas**:
    - Se evaluará el gráfico de ramas para verificar el correcto uso de las ramas, asegurando que las características salgan de `develop`, que las correcciones de errores salgan de `main`, y que las ramas de lanzamiento se creen a partir de `develop`, de igual manera que se hagan merge cada una a sus ramas correspondientes y que se creen las etiquetas necesarias.
 
-4. **Enlace del Repositorio**:
+## Entregables
+
+1. **Enlace del Repositorio**:
    - Deberás subir tu proyecto a un repositorio público en GitHub y proporcionar el enlace del repositorio en el E-Campus para su evaluación.
 
+2. **Hash del último commit a evaluar**:
+   - Deberás identificar el último commit que has realizado en el repositorio donde desarrollaste el taller y pegarlo en la caja de texto del entregable.
+   - El hash que debes copiar lo encuentras en los detalles de commits en el repositorio.
+   ![Commit Image](./images/commit.png)
 Asegúrate de que todos los elementos solicitados estén presentes en tu entrega para una evaluación completa.
