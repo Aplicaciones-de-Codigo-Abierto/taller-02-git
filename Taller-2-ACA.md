@@ -10,6 +10,8 @@ authors: Metzi Aguilar, David Garcia, Erika Paz, Kevin Escobar
 
 ## Introducción
 
+![Introduccion](./images/intro.png)
+
 El control de versiones es una práctica fundamental en el desarrollo de software moderno, ya que permite a los equipos gestionar y rastrear los cambios en el código fuente a lo largo del tiempo. Git, una de las herramientas más populares para el control de versiones, ofrece una serie de funcionalidades que facilitan la colaboración entre desarrolladores, la gestión de proyectos y la recuperación de versiones anteriores del código.
 
 Este taller tiene como objetivo proporcionar una comprensión clara de cómo utilizar Git de manera efectiva, así como las mejores prácticas para mantener un flujo de trabajo ordenado y eficiente. A lo largo de esta guía, aprenderás a inicializar un repositorio, a escribir mensajes de commit claros y significativos, y a utilizar herramientas como Commitlint, Husky y Commitizen para automatizar y estandarizar el proceso de creación de commits. Al finalizar, tendrás una base sólida para implementar un flujo de trabajo de control de versiones que mejore la calidad de tu código y la colaboración en equipo.
