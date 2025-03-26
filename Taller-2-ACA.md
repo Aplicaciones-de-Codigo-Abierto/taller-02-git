@@ -159,6 +159,9 @@ Las correcciones de errores críticos en producción se gestionan a través de r
 
 8. **Fusionar las correcciones a `develop`**: Después de que el Pull Request ha sido revisado y aprobado, se puede fusionar en `develop`.
 
+<aside class="negative">
+⚠️ Siempre que se cree una nueva rama de soporte, es importante realizar un <b>git pull</b> de las ramas principales correspondientes, de esta manera se evitan conflictos de sincronización de cambios.
+</aside>
 <!-- ------------------------ -->
 
 ## Configuración Proyecto
