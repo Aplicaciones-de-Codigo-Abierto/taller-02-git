@@ -450,7 +450,7 @@ husky - commit-msg script failed (code 1)
 </li>
 <li><strong>Hash del último commit a evaluar</strong>:<ul>
 <li>Deberás identificar el último commit que has realizado en el repositorio donde desarrollaste el taller y pegarlo en la caja de texto del entregable.</li>
-<li>El hash que debes copiar lo encuentras en los detalles de commits en el repositorio. <img alt="Commit Image" src="img/e2a3d5702e313b56.png"> Asegúrate de que todos los elementos solicitados estén presentes en tu entrega para una evaluación completa.</li>
+<li>El hash que debes copiar lo encuentras en los detalles de commits en el repositorio. <img alt="Commit Image" src="img/93173ce4f8f21d96.png"> Asegúrate de que todos los elementos solicitados estén presentes en tu entrega para una evaluación completa.</li>
 </ul>
 </li>
 </ol>
@@ -465,6 +465,13 @@ husky - commit-msg script failed (code 1)
   <script src="https://storage.googleapis.com/claat-public/prettify.js"></script>
   <script src="https://storage.googleapis.com/claat-public/codelab-elements.js"></script>
   <script src="//support.google.com/inapp/api.js"></script>
-
+  <script>
+    const fabs = document.querySelector('#fabs');
+    const done = document.querySelector('#done');
+    const codelabNavButtons = document.querySelector('#codelab-nav-buttons');    
+    const arrowBack = document.querySelector('#arrow-back');
+    fabs.removeChild(done);
+    codelabNavButtons.removeChild(arrowBack);
+  </script>
 </body>
 </html>
