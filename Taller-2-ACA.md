@@ -166,7 +166,7 @@ Las correcciones de errores críticos en producción se gestionan a través de r
 
 ## Configuración Proyecto
 
-Para el ejercicio práctico de este taller es importante configurar tu espacio de trabajo, para ello es muy importante haber cumplido con los `prerrequisitos` de la guía.
+Para el ejercicio práctico de este taller es importante configurar tu espacio de trabajo, para ello es necesario haber cumplido con los `prerrequisitos` de la guía.
 
 ### Inicialización de Repositorio de Git
 
@@ -251,7 +251,7 @@ Commitlint es una herramienta que permite verificar que los mensajes de commit s
 Para instalar Commitlint, ejecuta el siguiente comando:
 
 ```bash
-npm install -D @commitlint/{cli,config-conventional}
+npm install -D @commitlint/cli @commitlint/config-conventional
 ```
 
 <aside>ℹ️ Puedes ver las configuraciones disponibles desde el siguiente <a target="_blank" href="https://github.com/conventional-changelog/commitlint?tab=readme-ov-file#shared-configuration">enlace</a></aside>
