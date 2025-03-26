@@ -166,7 +166,7 @@ Las correcciones de errores críticos en producción se gestionan a través de r
 
 ## Configuración Proyecto
 
-Para el ejercicio práctico de este taller es importante configurar tu espacio de trabajo, para ello es muy importante haber cumplido con los [prerrequisitos](#prerrequisitos) de la guía.
+Para el ejercicio práctico de este taller es importante configurar tu espacio de trabajo, para ello es muy importante haber cumplido con los `prerrequisitos` de la guía.
 
 ### Inicialización de Repositorio de Git
 
